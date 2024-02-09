@@ -18,6 +18,13 @@ function App() {
       <button onClick={() => dispatch(increment())}>+</button>
       <div>{demo}</div>
       <button onClick={() => dispatch(decrement())}>-</button> <br />
+      <button
+        onClick={() => {
+          dispatch(incrementByAmount(5));
+        }}
+      >
+        /
+      </button>
     </>
   );
 }
